@@ -43,12 +43,12 @@ In these pictures the different shapes are to be classified by type.<br>
 
 To preprocess the images are run through a color change, canny edge detection and finally a blur.
 
-First the image is converted to grayscale with the builtin cvtColor function to get rid of the colors which are unnecessary in this case.
-![img](gray.PNG)
-Then canny edge detection is applied to detect the shape of the geometric object.
-![img](edges.PNG)
-Then a blur is applied to smooth out the shape to enure that the contour detection is not confused by the sharpness of the diagonal.
-![img](blur.PNG)
+First the image is converted to grayscale with the builtin cvtColor function to get rid of the colors which are unnecessary in this case.<br>
+![img](gray.PNG)<br>
+Then canny edge detection is applied to detect the shape of the geometric object.<br>
+![img](edges.PNG)<br>
+Then a blur is applied to smooth out the shape to enure that the contour detection is not confused by the sharpness of the diagonal.<br>
+![img](blur.PNG)<br>
 By this stage the contour is detected with the findContours() function and put into a vector: "contours".
 Because of the need to distinguish between a right triangle and a triangle, i.e. a triangle where one of the angles are 90 degrees and one that hasn't,
 the vertices are extracted.
@@ -61,10 +61,10 @@ Then it is checked whether any of the three angles are 90 degrees and the contou
 
 ### Results and evaluation
 
-As can be seen when running the program, the program is able to tell a right triangle from a triangle.
-![img](isrighttriangle.PNG)
-![img](notrighttriangle.PNG)
-![img](contours.PNG)
+As can be seen when running the program, the program is able to tell a right triangle from a triangle.<br>
+![img](isrighttriangle.PNG)<br>
+![img](notrighttriangle.PNG)<br>
+![img](contours.PNG)<br>
 
 The result is somewhat disappointing the program is able to tell a right triangle from a triangle. But the attempt to make the program classify squares
 into the 8 different types of squares was not successful.
