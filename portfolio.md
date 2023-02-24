@@ -37,11 +37,11 @@ To find faces in a video stream.
 
 ### Methodology and process
 
-In these pictures the different shapes are to be classified by type.
+<p>In these pictures the different shapes are to be classified by type.</p>
 ![img](right%20triangle.PNG)
 ![img](triangle.PNG)
 
-To preprocess the images are run through a color change, canny edge detection and finally a blur.
+<p>To preprocess the images are run through a color change, canny edge detection and finally a blur.</p>
 
 First the image is converted to grayscale with the builtin cvtColor function to get rid of the colors which are unnecessary in this case.
 ![img](/shapes/gray.PNG)
