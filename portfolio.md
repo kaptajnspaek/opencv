@@ -37,18 +37,18 @@ To find faces in a video stream.
 
 ### Methodology and process
 
-In these pictures the different shapes are to be classified by type.
-![img](right%20triangle.PNG)
-![img](triangle.PNG)
+In these pictures the different shapes are to be classified by type.<br>
+![img](right%20triangle.PNG)<br>
+![img](triangle.PNG)<br>
 
 To preprocess the images are run through a color change, canny edge detection and finally a blur.
 
 First the image is converted to grayscale with the builtin cvtColor function to get rid of the colors which are unnecessary in this case.
-![img](/shapes/gray.PNG)
+![img](gray.PNG)
 Then canny edge detection is applied to detect the shape of the geometric object.
-![img](/shapes/edges.PNG)
+![img](edges.PNG)
 Then a blur is applied to smooth out the shape to enure that the contour detection is not confused by the sharpness of the diagonal.
-![img](/shapes/blur.PNG)
+![img](blur.PNG)
 By this stage the contour is detected with the findContours() function and put into a vector: "contours".
 Because of the need to distinguish between a right triangle and a triangle, i.e. a triangle where one of the angles are 90 degrees and one that hasn't,
 the vertices are extracted.
@@ -62,9 +62,9 @@ Then it is checked whether any of the three angles are 90 degrees and the contou
 ### Results and evaluation
 
 As can be seen when running the program, the program is able to tell a right triangle from a triangle.
-![img](./shapes/isrighttriangle.PNG)
-![img](./shapes/notrighttriangle.PNG)
-![img](/shapes/contours.PNG)
+![img](isrighttriangle.PNG)
+![img](notrighttriangle.PNG)
+![img](contours.PNG)
 
 The result is somewhat disappointing the program is able to tell a right triangle from a triangle. But the attempt to make the program classify squares
 into the 8 different types of squares was not successful.
