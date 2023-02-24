@@ -17,9 +17,9 @@
 
 ## Introduction
 
-The use of computer vision to solve many problems that has hitherto required human involvement is an exciting and developing field.
+<p>The use of computer vision to solve many problems that has hitherto required human involvement is an exciting and developing field.
 In this paper the use of computer vision is demonstrated in different use cases. One involving classifying shapes,
-one in which computer vision is used to scan and rotate objects in pictures and one where computer vision is used to find faces in a picture.
+one in which computer vision is used to scan and rotate objects in pictures and one where computer vision is used to find faces in a picture.</p>
 
 ## Problem statement
 
