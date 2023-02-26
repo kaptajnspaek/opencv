@@ -2,6 +2,7 @@
 
 using namespace cv;
 using namespace std;
+using namespace chrono;
 
 int main()
 {
@@ -34,10 +35,7 @@ int main()
             rectangle(frame, face, Scalar(0, 255, 0), 2);
         }
         imshow("Face detection", frame);
-        char c = waitKey(1);
-        if (c == 27) {
-            break;
-        }
+        waitKey(10);
     }
     video.release();
     destroyAllWindows();
