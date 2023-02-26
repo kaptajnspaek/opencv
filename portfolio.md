@@ -10,9 +10,11 @@
     * Use case 1
     * Use case 2
 * Methodology and process
-    * Use case
+    * Use case 1
+    * Use case 2
 * Results and final evaluation
-    * Use case
+    * Use case 1
+    * Use case 2
 * Appendix
 
 ## Introduction
@@ -30,8 +32,6 @@ To take geometric shapes and classify them according to the classical names of g
 ### Use case 2
 
 To find faces in a video stream.
-
-## Methodology and process
 
 ### Use case 1 - Classifying shapes
 
@@ -105,9 +105,7 @@ Interestingly it has no problem with the face turned down or when grimacing:<br>
 ![img](headdown.png)
 ![img](headgrimacing.png)<br>
 
-
-The result is somewhat disappointing the program is able to tell a right triangle from a triangle. But the attempt to make the program classify squares
-into the 8 different types of squares was not successful.
+The program is doing what it is supposed to however the attempt at making a custom pre-trained model to recognize specific faces using the LBPHFaceRecognizer was not successful.
 
 
 ## Appendix
