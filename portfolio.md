@@ -70,5 +70,10 @@ The result is somewhat disappointing the program is able to tell a right triangl
 into the 8 different types of squares was not successful.
 
 ### Use case 2
-<br>
+
+### Methodology and process
+
+The video file troels.mp4 is a recording of the author moving around. To find the face in this video the cascadeclassifier class is used.
+It is intended to find objects in images or video based on a pre-trained model but it is most known for being used to find faces in videostreams.
+![img](headfront.png)<br>
 ## Appendix
