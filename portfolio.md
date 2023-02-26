@@ -75,5 +75,39 @@ into the 8 different types of squares was not successful.
 
 The video file troels.mp4 is a recording of the author moving around. To find the face in this video the cascadeclassifier class is used.
 It is intended to find objects in images or video based on a pre-trained model but it is most known for being used to find faces in videostreams.
+An example can be seen here:
 ![img](headfront.png)<br>
+
+After an instance of the cascadeclassifier has been created a pretrained model from the sample models from opencv is loaded (haarcascade_frontalface_default.xml).
+The algorithm used is the Viola-Jones Face Detection Technique also known as Haar Cascade.
+
+Then an instance of the VideoCapture class is created and the video loaded, this is then put into a Mat, frame by frame in the while loop which will run until there are no more frames in the video. The video playback will not start until a key is pressed.
+
+Preprocessing is done by converting the frame to grayscale with the cvtColor function. 
+A vector containing a Rect is declared to contain the detected faces.
+Then the facemodel is applied using the detectMultiScale method and put into the vector.
+
+Using a for loop a rectangle is then drawn onto the original color frame of the video.
+
+Finally to prevent playback from starting until ready a waitkey statement with a 10 millisecond delay is used.
+
+### Results and evaluation
+
+As can be seen when running the program, the program is able to find faces in the video stream with some limitations.<br>
+Here in the image from before the algorithm is easily able to find the face in the video:
+![img](headfront.png)<br>
+However if challenged the detection breaks down or gets confused.
+Here when the head is turned to a profile the detection can't find faces anymore because it has only been trained on front facing images of faces.
+![img](headturned.png)<br>
+Here where the head is slightly outside the frame the algorithm detects a face in the nostrils and philtrum.
+![img](headoutside.png)<br>
+Interestingly it has no problem with the face turned down or when grimacing:
+![img](headdown.png)
+![img](headgrimacing.png)<br>
+
+
+The result is somewhat disappointing the program is able to tell a right triangle from a triangle. But the attempt to make the program classify squares
+into the 8 different types of squares was not successful.
+
+
 ## Appendix
