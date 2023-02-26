@@ -94,14 +94,14 @@ Finally to prevent playback from starting until ready a waitkey statement with a
 ### Results and evaluation
 
 As can be seen when running the program, the program is able to find faces in the video stream with some limitations.<br>
-Here in the image from before the algorithm is easily able to find the face in the video:
+Here in the image from before the algorithm is easily able to find the face in the video:<br>
 ![img](headfront.png)<br>
-However if challenged the detection breaks down or gets confused.
-Here when the head is turned to a profile the detection can't find faces anymore because it has only been trained on front facing images of faces.
+However if challenged the detection breaks down or gets confused.<br>
+Here when the head is turned to a profile the detection can't find faces anymore because it has only been trained on front facing images of faces.<br>
 ![img](headturned.png)<br>
-Here where the head is slightly outside the frame the algorithm detects a face in the nostrils and philtrum.
+Here where the head is slightly outside the frame the algorithm detects a face in the nostrils and philtrum.<br>
 ![img](headoutside.png)<br>
-Interestingly it has no problem with the face turned down or when grimacing:
+Interestingly it has no problem with the face turned down or when grimacing:<br>
 ![img](headdown.png)
 ![img](headgrimacing.png)<br>
 
