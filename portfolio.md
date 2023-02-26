@@ -75,7 +75,7 @@ into the 8 different types of squares was not successful.
 
 The video file troels.mp4 is a recording of the author moving around. To find the face in this video the cascadeclassifier class is used.
 It is intended to find objects in images or video based on a pre-trained model but it is most known for being used to find faces in videostreams.
-An example can be seen here:
+An example can be seen here:<br>
 ![img](headfront.png)<br>
 
 After an instance of the cascadeclassifier has been created a pretrained model from the sample models from opencv is loaded (haarcascade_frontalface_default.xml).
